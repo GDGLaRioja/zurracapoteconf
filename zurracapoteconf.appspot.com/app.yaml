@@ -36,9 +36,6 @@ handlers:
 - url: /single\.html
   script: single.html
 
-- url: /2017/(.*)
-  script: /2017/\1
-
 - url: .*
   script: index.html
 
