@@ -25,4 +25,4 @@ script:
 # [END deploy]
 
 notifications:
-    slack: gdgspaincommunity:ZRre3sTpGTzcfYywfHFq4x4n
+    slack: gdgspaincommunity:ZRre3sTpGTzcfYywfHFq4x4n#gdg-la-rioja
