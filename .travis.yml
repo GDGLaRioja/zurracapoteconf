@@ -17,7 +17,7 @@ before_install:
 - gcloud auth activate-service-account --key-file zurracapoteconf-ef996acbd02b.json
 install:
 - gcloud config set project zurracapoteconf
-- gcloud -q components update gae-python
+# - gcloud -q components update gae-python
 script:
 - cd zurracapoteconf.appspot.com/ 
 - gcloud app deploy app.yaml -q --version 2
