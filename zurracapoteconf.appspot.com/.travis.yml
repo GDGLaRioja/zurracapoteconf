@@ -1,0 +1,22 @@
+sudo: false
+language: python
+cache:
+  directories:
+  - "$HOME/gcloud/"
+env:
+- PATH=$PATH:$HOME/gcloud/google-cloud-sdk/bin GOOGLE_APPLICATION_CREDENTIALS=$TRAVIS_BUILD_DIR/client_secrets.json
+before_install:
+- openssl aes-256-cbc -K $encrypted_c23fc1390ddc_key -iv $encrypted_c23fc1390ddc_iv
+  -in zurracapoteconf-ef996acbd02b.json.enc -out zurracapoteconf-ef996acbd02b.json
+  -d
+- if [ ! -d $HOME/gcloud/google-cloud-sdk ]; then mkdir -p $HOME/gcloud && wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
+  --directory-prefix=$HOME/gcloud && cd $HOME/gcloud && tar xzf google-cloud-sdk.tar.gz
+  && printf '\ny\n\ny\ny\n' | ./google-cloud-sdk/install.sh && cd $TRAVIS_BUILD_DIR;
+  fi
+- gcloud -q components update
+- gcloud auth activate-service-account --key-file zurracapoteconf-ef996acbd02b.json
+install:
+- gcloud config set project zurracapoteconf
+- gcloud -q components update gae-python
+script:
+- gcloud app deploy app.yaml -q --version 2
