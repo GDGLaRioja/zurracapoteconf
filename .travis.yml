@@ -21,7 +21,8 @@ install:
 
 script:
   - cd zurracapoteconf.appspot.com/ 
-  - gcloud app deploy app.yaml --version 2
+  - gcloud app deploy app.yaml -q ,
+  --version 2
 # [END deploy]
 
 notifications:
