@@ -20,4 +20,4 @@ install:
 # - gcloud -q components update gae-python
 script:
 #- cd zurracapoteconf.appspot.com/ 
-- gcloud app deploy zurracapoteconf.appspot.com/app.yaml -q --version 2
+- gcloud app deploy ./zurracapoteconf.appspot.com/app.yaml -q --version 2

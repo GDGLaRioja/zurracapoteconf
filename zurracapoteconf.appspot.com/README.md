@@ -1,4 +1,4 @@
-# zurracaponteconf.appsopt.com [![Build Status](https://travis-ci.org/GDGLaRioja/www-gdglarioja-site.appspot.com.svg?branch=master)](https://travis-ci.org/GDGLaRioja/www-gdglarioja-site.appspot.com)
+# zurracaponteconf.appsopt.com [![Build Status](https://travis-ci.org/GDGLaRioja/zurracapoteconf.svg?branch=master)](https://travis-ci.org/GDGLaRioja/www-gdglarioja-site.appspot.com)
 
 ## Zurracaponteconf  DevFest
 
