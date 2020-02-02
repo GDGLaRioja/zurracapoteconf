@@ -756,6 +756,11 @@ nav ul li.active > a {
   font-size: 14px;
 }
 
+.alto-350
+{
+  height: 350px
+}
+
 .btn.prev,
 .btn.next {
   width: 42px;
