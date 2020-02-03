@@ -756,11 +756,6 @@ nav ul li.active > a {
   font-size: 14px;
 }
 
-.alto-350
-{
-  height: 350px
-}
-
 .btn.prev,
 .btn.next {
   width: 42px;
@@ -1496,4 +1491,13 @@ blockquote > p {
 
 .scroll-down i {
   color: #3f51b5;
+}
+.resaltado
+{
+  color: white;
+}
+.resaltado a
+{
+  color: white;
+  background-color: #0e76a8;
 }
