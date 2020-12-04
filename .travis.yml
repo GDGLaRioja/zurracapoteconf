@@ -27,6 +27,8 @@ install:
 script:
   - cd zurracapoteconf.appspot.com/ 
   - gcloud app deploy app.yaml -q --version 2
+  on:
+    branch: master
 
 notifications:
     slack: gdgspaincommunity:ZRre3sTpGTzcfYywfHFq4x4n#gdg-la-rioja
