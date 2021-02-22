@@ -876,6 +876,7 @@ nav ul li.active > a {
   -moz-border-radius: 3px;
   border-radius: 3px;
   position: relative;
+  overflow: auto;
 }
 
 .entry-box h4 {

@@ -5,7 +5,7 @@
 Usando:
 Material Design Template for DevFest 2018 Season
 
-Repositorio para la creación de la web Zurracaponteconf La Rioja 2020 en el Centro Tecnologico de La Rioja
+Repositorio para la creación de la web Zurracaponteconf La Rioja 2021 en el Centro Tecnologico de La Rioja
 
 ## Zurracaponteconf
 Repositorio para el evento #Zurracaponteconf de La Rioja que se publica en el entorno de  app engine.
