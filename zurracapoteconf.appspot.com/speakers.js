@@ -1,4 +1,4 @@
-{
+export default speakersData = {
     "speakers_track_1":[
         {
             "id": 1,

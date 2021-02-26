@@ -2,7 +2,11 @@ $(document).ready(function(){
 
  	"use strict";	
 
+
  	$(window).load(function() {
+
+		// apend the speakers reusable card
+		paintSpeakersCards();
 
  		// Preloader
 		$('#status').fadeOut();
@@ -240,4 +244,69 @@ function container_full_height_init(){
     (function($){
         $(".container-full-height").height($(window).height());
     })(jQuery);
+}
+
+// Render speakers cards
+function paintSpeakersCards(){
+	let speakersDataJson = require('../speakers.js');
+	let speakerCardsElement = document.createElement("div");
+	speakerCardsElement.classList.add("row");
+	speakerCardsElement.classList.add("mt-20");
+	for(let i = 0; i<speakersDataJson.length; i++){
+		const speakerCard = `<div>Holi! ${i}</div>`;
+		speakerCardsElement.innerHTML += speakerCard;
+	}
+
+// 	<div class="col-md-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; -webkit-animation-duration: 1s; animation-delay: 0.2s; -webkit-animation-delay: 0.2s; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
+// 	<div class="blog-col-3 mt-30">
+// 		<div class="entry-box">
+// 			<div class="entry-img col-md-4">
+// 				<a target="_blank" href="https://twitter.com/martadosptocero">
+// 					<img src="upload/MartaGarciaLuis.jpg" alt="Marta García Luis"/>
+// 				</a>
+// 			</div>
+			
+// 			<div class="entry-title">
+// 				<h4><a target="_blank" href="#">Track: Sábado <strong>La moneda cuántica</strong></a></h4>
+// 			</div>
+
+// 			<div class="entry-content">
+// 				<p dir="ltr">Marta García Luis nos acercará al mundo de la criptografía y la computación cuántica</p>
+// 			</div>
+// 			<p><i class="fa fa-clock-o" aria-hidden="true"></i> xx:xx - xx:xx </p>
+// 				<p><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+// 					<a href="https://www.linkedin.com/in/martagarcialuis/"
+// 						target="_blank">Marta García Luis</a> - Ingeniera Informática especializada en criptografía y computación cuántica.
+// 			</p>
+// 			<button type="button" class="btn btn-small btn-rounded" data-toggle="modal" data-target="#myModal4">Saber más</button>
+// 			<div class="modal fade" id="myModal4" role="dialog">
+// 				<div class="modal-dialog">
+// 					{/* Modal content */}
+// 					<div class="modal-content">
+// 						<div class="modal-header">
+// 							<button type="button" class="close"
+// 								data-dismiss="modal">&times;</button>
+// 							<h4 class="modal-title">La moneda cuántica</h4>
+// 						</div>
+// 						<div class="modal-body">
+// 							<p>
+// 								Mucho se habla de la computación cuántica, pero ¿Cuando y como surgió esta idea? ¿Qué papel juega la criptografía? ¿Qué es la moneda cuántica? 
+// 							</p>
+// 							<p>
+// 								En esta charla resolveremos juntos estas incógnitas.
+// 							</p>
+// 						</div>
+// 						<div class="modal-footer">
+// 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>
+// 	</div>
+// </div>					
+
+
+	document.getElementById('forloop').appendChild(speakerCardsElement); 
+
 }
