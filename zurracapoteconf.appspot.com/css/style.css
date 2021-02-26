@@ -634,6 +634,10 @@ nav ul li.active > a {
   color: #fff;
 }
 
+.socials a:hover .fa.fa-meetup {
+  background-color: #F6405F;
+}
+
 .socials a:hover .fa.fa-facebook {
   background-color: #3b5998;
 }
