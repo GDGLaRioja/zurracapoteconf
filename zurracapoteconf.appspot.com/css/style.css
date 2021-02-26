@@ -1502,3 +1502,17 @@ blockquote > p {
   color: white;
   background-color: #0e76a8;
 }
+
+
+/* Images */
+
+.testimonials-img{
+  height: 134px;
+  width: 134px;
+}
+
+.entry-img img {
+  height: 240px;
+  width: 240px;
+  object-fit: cover;
+}
