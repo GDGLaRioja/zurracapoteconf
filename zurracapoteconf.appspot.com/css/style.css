@@ -196,7 +196,7 @@ p {
   position: fixed;
   width: 100%;
   height: 70px;
-  background-color: rgba(63,81,181,1);
+  background-color: #0e1830;
 }
 
 .main-nav.sticky .logo {
