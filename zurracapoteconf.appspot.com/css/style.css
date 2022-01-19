@@ -712,6 +712,10 @@ nav ul li.active > a {
   background-color: #3f729b;
 }
 
+.socials a:hover i.fa.fa-globe {
+  background-color: #6c6c6c;
+}
+
 /*Progress Bars*/
 
 .progress-bar {
