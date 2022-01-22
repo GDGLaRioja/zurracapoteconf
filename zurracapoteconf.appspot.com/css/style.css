@@ -1577,3 +1577,19 @@ blockquote > p {
   width: 240px;
   object-fit: cover;
 }
+
+/* Sponsor area */
+
+.our-sponsor-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.our-sponsor-client-area {
+  padding: 20px;
+}
+
+.single-sponsor img {
+  max-height: 6em;
+}
