@@ -7,8 +7,8 @@ builtins:
 
 handlers:
   - url: /upload/favicon\.ico
-    static_files: /upload/favicon.ico
-    upload: /upload/favicon\.ico
+    static_files: upload/favicon.ico
+    upload: upload/favicon\.ico
 
   - url: /upload/(.*\.(jpg$|png$|gif$))
     static_files: upload/\1
