@@ -1594,5 +1594,14 @@ blockquote > p {
 .single-sponsor img {
   max-height: 6em;
   min-height: 100%;
-  min-width: auto;
+}
+
+.single-sponsor.visual-smaller {
+  display: flex;
+  align-items: center;
+}
+
+.single-sponsor.visual-smaller img {
+  max-height: 4em;
+  min-height: 4em;
 }
