@@ -1584,7 +1584,7 @@ blockquote > p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .our-sponsor-client-area {
@@ -1602,6 +1602,6 @@ blockquote > p {
 }
 
 .single-sponsor.visual-smaller img {
-  max-height: 4em;
-  min-height: 4em;
+  max-height: 4.5em;
+  min-height: 4.5em;
 }
