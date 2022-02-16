@@ -1628,6 +1628,6 @@ blockquote > p {
 
 .single-sponsor.visual-smaller img,
 .multiple-sponsor.visual-smaller img {
-  max-height: 4.5em;
-  min-height: 4.5em;
+  max-height: 4em;
+  min-height: 4em;
 }
