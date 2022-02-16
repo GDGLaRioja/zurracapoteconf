@@ -1597,19 +1597,37 @@ blockquote > p {
 
 .our-sponsor-client-area {
   padding: 20px;
+  background-color: #4a5475;
 }
 
-.single-sponsor img {
-  max-height: 6em;
-  min-height: 100%;
+.single-sponsor,
+.multiple-sponsor {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
 }
 
-.single-sponsor.visual-smaller {
+.multiple-sponsor {
+  width: 320px;
+}
+
+.single-sponsor img,
+.multiple-sponsor img {
+  width: 100%;
+}
+
+.single-sponsor.visual-smaller,
+.multiple-sponsor.visual-smaller {
   display: flex;
   align-items: center;
 }
 
-.single-sponsor.visual-smaller img {
+.single-sponsor.visual-smaller img,
+.multiple-sponsor.visual-smaller img {
   max-height: 4.5em;
   min-height: 4.5em;
 }
