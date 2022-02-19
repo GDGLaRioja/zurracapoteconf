@@ -1616,11 +1616,6 @@ blockquote > p {
   width: 480px;
 }
 
-.single-sponsor img,
-.multiple-sponsor img {
-  width: 100%;
-}
-
 .single-sponsor.visual-smaller,
 .multiple-sponsor.visual-smaller {
   display: flex;
@@ -1630,5 +1625,4 @@ blockquote > p {
 .single-sponsor.visual-smaller img,
 .multiple-sponsor.visual-smaller img {
   max-height: 4em;
-  min-height: 4em;
 }
