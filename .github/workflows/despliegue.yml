@@ -49,7 +49,9 @@ jobs:
       uses: 'google-github-actions/deploy-appengine@v0'
       with:
         deliverables: 'zurracapoteconf.appspot.com/app.yaml'
+        # credentials: ${{secrets.GOOGLE_APP_ENGINE_KEY}}
         version: 2023
+        flags: --no-cache
         project_id: '${{ secrets.GCP_PROJECT }}'
 
     - name: 'show output'
