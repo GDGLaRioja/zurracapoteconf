@@ -1,9 +1,4 @@
-canvas#spiders {
-  width: 100%;
-  /*  height:auto;*/
-  /*  background-color: rgba(63,81,181,0.4);*/
-  background-color: none;
-}
+
 h1.main-title {
   position: relative;
   margin-top: -350px;
