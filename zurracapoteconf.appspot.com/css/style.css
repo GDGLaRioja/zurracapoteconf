@@ -1,3 +1,4 @@
+
 .clearfix {
   *zoom: 1;
 }
@@ -83,13 +84,13 @@ a:focus {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -117,7 +118,7 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  margin-top: 0;
+  margin-top: 0%;
   color: #212121;
   line-height: 1.5;
 }
@@ -212,7 +213,8 @@ p {
 .logo {
   display: table-cell;
   vertical-align: middle;
-  height: 70px;
+  height:100%;
+  padding-top: 4%;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -230,12 +232,64 @@ p {
   height: 70px;
 }
 
+
+
 @media (min-width: 768px) {
   .navbar-toggle {
     display: block;
   }
 }
-
+@media (max-width: 985px) {
+  .logo img{
+    height: 95%;
+    width: 95%;
+    padding: -3%;
+    margin: -3%;
+  }
+}
+@media (max-width:789px) {
+  .logo img{
+    height: 85%;
+    width: 85%;
+    padding: -3%;
+    margin: -3%;
+  }
+}
+@media (max-width:703px) {
+  .logo img{
+    height:75%;
+    width: 75%;
+    padding: -3%;
+    margin: -3%;
+  }
+}
+@media (max-width:645px) {
+  .logo img{
+    height: 65%;
+    width: 65%;
+    padding: -3%;
+    margin: -3%;
+  }
+}
+@media (max-width:629px) {
+  .logo img{
+    height: 55%;
+    width: 55%;
+    padding: -3%;
+    margin: -3%;
+  }
+}
+@media (max-width:589px) {
+  .logo img{
+    position: absolute;
+    height: 0%;
+    width: 0%;
+  }
+  .navbar-toggle {
+    padding: -0.1%;
+    margin: -0.1%;
+  }
+}
 nav,
 .navbar-toggle {
   -webkit-touch-callout: none;
@@ -253,7 +307,7 @@ nav {
   width: 100%;
   height: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0% auto;
   color: white;
 }
 
@@ -287,7 +341,7 @@ nav ul li a {
 }
 
 .navbar-toggle {
-  top: 10px;
+  padding-top: 1%;
   margin-right: 0;
   width: 47px;
   height: 45px;
