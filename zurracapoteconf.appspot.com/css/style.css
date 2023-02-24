@@ -214,7 +214,7 @@ p {
   display: table-cell;
   vertical-align: middle;
   height:100%;
-  padding-top: 4%;
+  padding-top: 5%;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -227,13 +227,9 @@ p {
   height: 70px;
   background-color: #0e1830;
 }
-
 .main-nav.sticky .logo {
   height: 70px;
 }
-
-
-
 @media (min-width: 768px) {
   .navbar-toggle {
     display: block;
@@ -241,8 +237,8 @@ p {
 }
 @media (max-width: 985px) {
   .logo img{
-    height: 95%;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     padding: -3%;
     margin: -3%;
   }
@@ -285,9 +281,20 @@ p {
     height: 0%;
     width: 0%;
   }
+  .main-nav.sticky .logo img{
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: -1%;
+    padding: -1%;
+
+  }
   .navbar-toggle {
-    padding: -0.1%;
+    padding-top:-0.1%;
     margin: -0.1%;
+  }
+  .main-nav.sticky .navbar-toggle {
+    margin: 4%;
   }
 }
 nav,
