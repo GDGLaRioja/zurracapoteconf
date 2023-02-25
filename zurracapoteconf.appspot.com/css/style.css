@@ -208,13 +208,31 @@ p {
   float: left;
   position: relative;
   z-index: 10;
+  top: 10px;
+  margin: 4%;
+}
+
+@media (min-width: 400px) {
+  .logo-light {
+    margin: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-light {
+    margin: 1%;
+  }
+}
+
+@media (min-width: 985px) {
+  .logo-light {
+    margin: 0%;
+  }
 }
 
 .logo {
   display: table-cell;
   vertical-align: middle;
-  height:100%;
-  padding-top: 5%;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -227,9 +245,7 @@ p {
   height: 70px;
   background-color: #0e1830;
 }
-.main-nav.sticky .logo {
-  height: 70px;
-}
+
 @media (min-width: 768px) {
   .navbar-toggle {
     display: block;
@@ -243,49 +259,12 @@ p {
     margin: -3%;
   }
 }
-@media (max-width:789px) {
-  .logo img{
-    height: 85%;
-    width: 85%;
-    padding: -3%;
-    margin: -3%;
-  }
-}
-@media (max-width:703px) {
-  .logo img{
-    height:75%;
-    width: 75%;
-    padding: -3%;
-    margin: -3%;
-  }
-}
-@media (max-width:645px) {
-  .logo img{
-    height: 65%;
-    width: 65%;
-    padding: -3%;
-    margin: -3%;
-  }
-}
-@media (max-width:629px) {
-  .logo img{
-    height: 55%;
-    width: 55%;
-    padding: -3%;
-    margin: -3%;
-  }
-}
+
 @media (max-width:589px) {
-  .logo img{
-    position: absolute;
-    height: 0%;
-    width: 0%;
-  }
   .main-nav.sticky .logo img{
     position: relative;
     height: 100%;
-    width: 80%;
-    margin: -1%;
+    width: 100%;
     padding: -1%;
 
   }
@@ -294,7 +273,7 @@ p {
     margin: -0.1%;
   }
   .main-nav.sticky .navbar-toggle {
-    margin: 4%;
+    margin: 2%;
   }
 }
 nav,
@@ -348,7 +327,7 @@ nav ul li a {
 }
 
 .navbar-toggle {
-  padding-top: 1%;
+  top: 10px;
   margin-right: 0;
   width: 47px;
   height: 45px;
